@@ -1,0 +1,52 @@
+{
+    "version": 8,
+    "name": "OSM Liberty",
+    "metadata": {
+      "maputnik:license": "https://github.com/maputnik/osm-liberty/blob/gh-pages/LICENSE.md",
+      "maputnik:renderer": "ol",
+      "openmaptiles:version": "3.x"
+    },
+    "sources": {
+      "openmaptiles": {
+        "type": "vector"
+  
+      }
+    },
+    "sprite": "../data/json/osm_liberty_sprite",
+    "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
+    "layers": [
+      {
+        "id": "Export_Output_4.shp_0",
+        "type": "symbol",
+        "source": "openmaptiles",
+        "source-layer": "Export_Output_4.shp_0",
+        "minzoom": 7,
+        "filter": [
+          "all",
+          ["==", "DYDJ", "35kV"]
+        ],
+        "layout": {
+          "icon-image": "35kVbiandianzhan",
+          "text-anchor": "bottom",
+          "text-field": "{NAME}",
+          "text-font": ["Roboto Medium"],
+          "text-max-width": 5,
+          "text-offset": [0, 0],
+          "text-size": {
+            "base": 1.2,
+            "stops": [[7, 14], [11, 24]]
+          },
+          "icon-allow-overlap": true,
+          "icon-optional": false,
+          "text-justify": "left"
+        },
+        "paint": {
+          "text-color": "#333",
+          "text-halo-color": "rgba(255,255,255,1)",
+          "text-halo-width": 1.2,
+          "icon-color": "rgba(255, 255, 255, 1)"
+        },
+        "maxzoom": 24
+      }]
+    }
+    
