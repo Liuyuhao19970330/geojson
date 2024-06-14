@@ -1,0 +1,172 @@
+{
+  "version": 8,
+  "name": "OSM Liberty",
+  "metadata": {
+      "maputnik:license": "https://github.com/maputnik/osm-liberty/blob/gh-pages/LICENSE.md",
+      "maputnik:renderer": "ol",
+      "openmaptiles:version": "3.x"
+  },
+  "sources": {
+      "openmaptiles": {
+          "type": "vector"
+      }
+  },
+  "sprite": "http://192.168.100.94:8887/service/osm_liberty_sprite",
+  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
+  "layers": [
+     
+    {
+      "id": "fbt_12_bingqu_2020_50_level_0_5",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "fbt_12_bingqu_2020_50.shp_0",
+      "filter": [
+          "all",
+          [
+              "==",
+              "冰厚",
+              "0~5"
+          ]
+      ],
+      "paint": {
+          "fill-antialias": false,
+          "fill-color": "rgba(255, 255, 255, 1)",
+          "fill-opacity": 0.8
+      }
+  },
+  {
+      "id": "fbt_12_bingqu_2020_50_level_5_10",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "fbt_12_bingqu_2020_50.shp_0",
+      "filter": [
+          "all",
+          [
+              "==",
+              "冰厚",
+              "5~10"
+          ]
+      ],
+      "paint": {
+          "fill-antialias": false,
+          "fill-color": "rgba(180, 180, 180, 1)",
+          "fill-opacity": 0.8
+      }
+  },
+  {
+      "id": "fbt_12_bingqu_2020_50_level_10_15",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "fbt_12_bingqu_2020_50.shp_0",
+      "filter": [
+          "all",
+          [
+              "==",
+              "冰厚",
+              "10~15"
+          ]
+      ],
+      "paint": {
+          "fill-antialias": false,
+          "fill-color": "rgba(255, 255, 0, 1)",
+          "fill-opacity": 0.8
+      }
+  },
+  {
+      "id": "fbt_12_bingqu_2020_50_level_15_20",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "fbt_12_bingqu_2020_50.shp_0",
+      "filter": [
+          "all",
+          [
+              "==",
+              "冰厚",
+              "15~20"
+          ]
+      ],
+      "paint": {
+          "fill-antialias": false,
+          "fill-color": "rgba(255, 150, 150, 1)",
+          "fill-opacity": 0.8
+      }
+  },
+  {
+      "id": "fbt_12_bingqu_2020_50_level_20_30",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "fbt_12_bingqu_2020_50.shp_0",
+      "filter": [
+          "all",
+          [
+              "==",
+              "冰厚",
+              "20~30"
+          ]
+      ],
+      "paint": {
+          "fill-antialias": false,
+          "fill-color": "rgba(200, 0, 255, 1)",
+          "fill-opacity": 0.8
+      }
+  },
+  {
+      "id": "fbt_12_bingqu_2020_50_level_30_40",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "fbt_12_bingqu_2020_50.shp_0",
+      "filter": [
+          "all",
+          [
+              "==",
+              "冰厚",
+              "30~40"
+          ]
+      ],
+      "paint": {
+          "fill-antialias": false,
+          "fill-color": "rgba(200, 100, 0, 1)",
+          "fill-opacity": 0.8
+      }
+  },
+  {
+      "id": "fbt_12_bingqu_2020_50_level_40_50",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "fbt_12_bingqu_2020_50.shp_0",
+      "filter": [
+          "all",
+          [
+              "==",
+              "冰厚",
+              "40~50"
+          ]
+      ],
+      "paint": {
+          "fill-antialias": false,
+          "fill-color": "rgba(0, 255, 0, 1)",
+          "fill-opacity": 0.8
+      }
+  },
+  {
+      "id": "fbt_12_bingqu_2020_50_level_50+",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "fbt_12_bingqu_2020_50.shp_0",
+      "filter": [
+          "all",
+          [
+              "==",
+              "冰厚",
+              "50以上"
+          ]
+      ],
+      "paint": {
+          "fill-antialias": false,
+          "fill-color": "rgba(255, 0, 0, 1)",
+          "fill-opacity": 0.8
+      }
+  }
+  ],
+  "id": "osm-liberty"
+}
