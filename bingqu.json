@@ -30,7 +30,7 @@
       ],
       "paint": {
           "fill-antialias": false,
-          "fill-color": "rgba(234, 234, 234, 1)",
+          "fill-color": "rgba(123, 123, 123, 1)",
           "fill-opacity": 0.8
       }
   },
@@ -68,7 +68,7 @@
       ],
       "paint": {
           "fill-antialias": false,
-          "fill-color": "rgba(234, 234, 0, 1)",
+          "fill-color": "rgba(123, 123, 0, 1)",
           "fill-opacity": 0.8
       }
   },
@@ -87,7 +87,7 @@
       ],
       "paint": {
           "fill-antialias": false,
-          "fill-color": "rgba(234, 150, 150, 1)",
+          "fill-color": "rgba(123, 150, 150, 1)",
           "fill-opacity": 0.8
       }
   },
@@ -106,7 +106,7 @@
       ],
       "paint": {
           "fill-antialias": false,
-          "fill-color": "rgba(200, 0, 234, 1)",
+          "fill-color": "rgba(200, 0, 123, 1)",
           "fill-opacity": 0.8
       }
   },
@@ -144,7 +144,7 @@
       ],
       "paint": {
           "fill-antialias": false,
-          "fill-color": "rgba(0, 234, 0, 1)",
+          "fill-color": "rgba(0, 123, 0, 1)",
           "fill-opacity": 0.8
       }
   },
@@ -163,7 +163,7 @@
       ],
       "paint": {
           "fill-antialias": false,
-          "fill-color": "rgba(234, 0, 0, 1)",
+          "fill-color": "rgba(123, 0, 0, 1)",
           "fill-opacity": 0.8
       }
   }
