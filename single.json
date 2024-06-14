@@ -2,51 +2,3395 @@
     "version": 8,
     "name": "OSM Liberty",
     "metadata": {
-      "maputnik:license": "https://github.com/maputnik/osm-liberty/blob/gh-pages/LICENSE.md",
-      "maputnik:renderer": "ol",
-      "openmaptiles:version": "3.x"
+        "maputnik:license": "https://github.com/maputnik/osm-liberty/blob/gh-pages/LICENSE.md",
+        "maputnik:renderer": "ol",
+        "openmaptiles:version": "3.x"
     },
     "sources": {
-      "openmaptiles": {
-        "type": "vector"
-  
-      }
+        "openmaptiles": {
+            "type": "vector"
+        }
     },
-    "sprite": "../data/json/osm_liberty_sprite",
+    "sprite": "http://192.168.100.94:8887/service/osm_liberty_sprite",
     "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
     "layers": [
-      {
-        "id": "Export_Output_4.shp_0",
-        "type": "symbol",
-        "source": "openmaptiles",
-        "source-layer": "Export_Output_4.shp_0",
-        "minzoom": 7,
-        "filter": [
-          "all",
-          ["==", "DYDJ", "35kV"]
-        ],
-        "layout": {
-          "icon-image": "35kVbiandianzhan",
-          "text-anchor": "bottom",
-          "text-field": "{NAME}",
-          "text-font": ["Roboto Medium"],
-          "text-max-width": 5,
-          "text-offset": [0, 0],
-          "text-size": {
-            "base": 1.2,
-            "stops": [[7, 14], [11, 24]]
-          },
-          "icon-allow-overlap": true,
-          "icon-optional": false,
-          "text-justify": "left"
+        {
+            "id": "Export_Output_4.shp_0",
+            "type": "symbol",
+            "source": "openmaptiles",
+            "source-layer": "Export_Output_4.shp_0",
+            "minzoom": 7,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "DYDJ",
+                    "35kV"
+                ]
+            ],
+            "layout": {
+                "icon-image": "35kVbiandianzhan",
+                "text-anchor": "bottom",
+                "text-field": "{NAME}",
+                "text-font": [
+                    "Roboto Medium"
+                ],
+                "text-max-width": 5,
+                "text-offset": [
+                    0,
+                    0
+                ],
+                "text-size": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            7,
+                            14
+                        ],
+                        [
+                            11,
+                            24
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-optional": false,
+                "text-justify": "left"
+            },
+            "paint": {
+                "text-color": "#333",
+                "text-halo-color": "rgba(255,255,255,1)",
+                "text-halo-width": 1.2,
+                "icon-color": "rgba(255, 255, 255, 1)"
+            },
+            "maxzoom": 24
         },
-        "paint": {
-          "text-color": "#333",
-          "text-halo-color": "rgba(255,255,255,1)",
-          "text-halo-width": 1.2,
-          "icon-color": "rgba(255, 255, 255, 1)"
+        {
+            "id": "Export_Output_4.shp_02",
+            "type": "symbol",
+            "source": "openmaptiles",
+            "source-layer": "Export_Output_3.shp_0",
+            "minzoom": 7,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "DYDJ",
+                    "110kV"
+                ]
+            ],
+            "layout": {
+                "icon-image": "110kVbiandianzhan",
+                "text-anchor": "bottom",
+                "text-field": "{NAME}",
+                "text-font": [
+                    "Roboto Medium"
+                ],
+                "text-max-width": 5,
+                "text-offset": [
+                    0,
+                    0
+                ],
+                "text-size": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            7,
+                            14
+                        ],
+                        [
+                            11,
+                            24
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-optional": false,
+                "text-justify": "left"
+            },
+            "paint": {
+                "text-color": "#333",
+                "text-halo-color": "rgba(255,255,255,1)",
+                "text-halo-width": 1.2,
+                "icon-color": "rgba(255, 255, 255, 1)"
+            },
+            "maxzoom": 24
         },
-        "maxzoom": 24
-      }]
-    }
-    
+        {
+            "id": "Export_Output_4.shp_03",
+            "type": "symbol",
+            "source": "openmaptiles",
+            "source-layer": "Export_Output_3.shp_0",
+            "minzoom": 7,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "DYDJ",
+                    "220kV"
+                ]
+            ],
+            "layout": {
+                "icon-image": "220kVbiandianzhan",
+                "text-anchor": "bottom",
+                "text-field": "{NAME}",
+                "text-font": [
+                    "Roboto Medium"
+                ],
+                "text-max-width": 5,
+                "text-offset": [
+                    0,
+                    0
+                ],
+                "text-size": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            7,
+                            14
+                        ],
+                        [
+                            11,
+                            24
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-optional": false,
+                "text-justify": "left"
+            },
+            "paint": {
+                "text-color": "#333",
+                "text-halo-color": "rgba(255,255,255,1)",
+                "text-halo-width": 1.2,
+                "icon-color": "rgba(255, 255, 255, 1)"
+            },
+            "maxzoom": 24
+        },
+        {
+            "id": "Export_Output_4.shp_05",
+            "type": "symbol",
+            "source": "openmaptiles",
+            "source-layer": "Export_Output_4.shp_0",
+            "minzoom": 7,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "DYDJ",
+                    "500kV"
+                ]
+            ],
+            "layout": {
+                "icon-image": "500kVbiandianzhan",
+                "text-anchor": "bottom",
+                "text-field": "{NAME}",
+                "text-font": [
+                    "Roboto Medium"
+                ],
+                "text-max-width": 5,
+                "text-offset": [
+                    0,
+                    0
+                ],
+                "text-size": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            7,
+                            14
+                        ],
+                        [
+                            11,
+                            24
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-optional": false,
+                "text-justify": "left"
+            },
+            "paint": {
+                "text-color": "#333",
+                "text-halo-color": "rgba(255,255,255,1)",
+                "text-halo-width": 1.2,
+                "icon-color": "rgba(255, 255, 255, 1)"
+            },
+            "maxzoom": 24
+        },
+        {
+            "id": "Export_Output_4.shp_10",
+            "type": "symbol",
+            "source": "openmaptiles",
+            "source-layer": "Export_Output_4.shp_0",
+            "minzoom": 7,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "DYDJ",
+                    "1000kV"
+                ]
+            ],
+            "layout": {
+                "icon-image": "1000kVbiandianzhan",
+                "text-anchor": "bottom",
+                "text-field": "{NAME}",
+                "text-font": [
+                    "Roboto Medium"
+                ],
+                "text-max-width": 5,
+                "text-offset": [
+                    0,
+                    0
+                ],
+                "text-size": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            7,
+                            14
+                        ],
+                        [
+                            11,
+                            24
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-optional": false,
+                "text-justify": "left"
+            },
+            "paint": {
+                "text-color": "#333",
+                "text-halo-color": "rgba(255,255,255,1)",
+                "text-halo-width": 1.2,
+                "icon-color": "rgba(255, 255, 255, 1)"
+            },
+            "maxzoom": 24
+        },
+        {
+            "id": "Export_Output_3.shp_0",
+            "type": "symbol",
+            "source": "openmaptiles",
+            "source-layer": "Export_Output_3.shp_0",
+            "minzoom": 6,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "POWERTYPE",
+                    "火电"
+                ]
+            ],
+            "layout": {
+                "icon-image": "huodian",
+                "text-anchor": "bottom",
+                "text-field": "{NAME}",
+                "text-font": [
+                    "Roboto Medium"
+                ],
+                "text-max-width": 5,
+                "text-offset": [
+                    0,
+                    0
+                ],
+                "text-size": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            7,
+                            14
+                        ],
+                        [
+                            11,
+                            24
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-optional": false,
+                "text-justify": "left"
+            },
+            "paint": {
+                "text-color": "#333",
+                "text-halo-color": "rgba(255,255,255,1)",
+                "text-halo-width": 1.2,
+                "icon-color": "rgba(255, 255, 255, 1)"
+            },
+            "maxzoom": 24
+        },
+        {
+            "id": "Export_Output_3.shp_099",
+            "type": "symbol",
+            "source": "openmaptiles",
+            "source-layer": "Export_Output_3.shp_0",
+            "minzoom": 6,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "POWERTYPE",
+                    "光伏电场"
+                ]
+            ],
+            "layout": {
+                "icon-image": "guangfu",
+                "text-anchor": "bottom",
+                "text-field": "{NAME}",
+                "text-font": [
+                    "Roboto Medium"
+                ],
+                "text-max-width": 5,
+                "text-offset": [
+                    0,
+                    0
+                ],
+                "text-size": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            7,
+                            14
+                        ],
+                        [
+                            11,
+                            24
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-optional": false,
+                "text-justify": "left"
+            },
+            "paint": {
+                "text-color": "#333",
+                "text-halo-color": "rgba(255,255,255,1)",
+                "text-halo-width": 1.2,
+                "icon-color": "rgba(255, 255, 255, 1)"
+            },
+            "maxzoom": 24
+        },
+        {
+            "id": "Export_Output_3.shp_012",
+            "type": "symbol",
+            "source": "openmaptiles",
+            "source-layer": "Export_Output_3.shp_0",
+            "minzoom": 6,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "POWERTYPE",
+                    "水电"
+                ]
+            ],
+            "layout": {
+                "icon-image": "shuidian",
+                "text-anchor": "bottom",
+                "text-field": "{NAME}",
+                "text-font": [
+                    "Roboto Medium"
+                ],
+                "text-max-width": 5,
+                "text-offset": [
+                    0,
+                    0
+                ],
+                "text-size": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            7,
+                            14
+                        ],
+                        [
+                            11,
+                            24
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-optional": false,
+                "text-justify": "left"
+            },
+            "paint": {
+                "text-color": "#333",
+                "text-halo-color": "rgba(255,255,255,1)",
+                "text-halo-width": 1.2,
+                "icon-color": "rgba(255, 255, 255, 1)"
+            },
+            "maxzoom": 24
+        },
+        {
+            "id": "Export_Output_3.shp_01",
+            "type": "symbol",
+            "source": "openmaptiles",
+            "source-layer": "Export_Output_3.shp_0",
+            "minzoom": 6,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "POWERTYPE",
+                    "风电场"
+                ]
+            ],
+            "layout": {
+                "icon-image": "fengdian",
+                "text-anchor": "bottom",
+                "text-field": "{NAME}",
+                "text-font": [
+                    "Roboto Medium"
+                ],
+                "text-max-width": 5,
+                "text-offset": [
+                    0,
+                    0
+                ],
+                "text-size": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            7,
+                            14
+                        ],
+                        [
+                            11,
+                            24
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-optional": false,
+                "text-justify": "left"
+            },
+            "paint": {
+                "text-color": "#333",
+                "text-halo-color": "rgba(255,255,255,1)",
+                "text-halo-width": 1.2,
+                "icon-color": "rgba(255, 255, 255, 1)"
+            },
+            "maxzoom": 24
+        },
+        {
+            "id": "Export_Output_2.shp_0_220kV",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "Export_Output_2.shp_0",
+            "minzoom": 0,
+            "maxzoom": 24,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "DYDJ",
+                    "220kV"
+                ]
+            ],
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(0, 112, 156, 1)",
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.4
+                        ],
+                        [
+                            4,
+                            1
+                        ]
+                    ]
+                },
+                "line-width": {
+                    "base": 1.5,
+                    "stops": [
+                        [
+                            3,
+                            1.5
+                        ],
+                        [
+                            5,
+                            3
+                        ],
+                        [
+                            12,
+                            5
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Export_Output_2.shp_0_220kV_ZAIJIAN",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "Export_Output_2.shp_0",
+            "minzoom": 0,
+            "maxzoom": 24,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "DYDJ",
+                    "220kV在建"
+                ]
+            ],
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(0, 112, 156, 1)",
+                "line-dasharray": [
+                    5,
+                    3
+                ],
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.4
+                        ],
+                        [
+                            4,
+                            1
+                        ]
+                    ]
+                },
+                "line-width": {
+                    "base": 1.5,
+                    "stops": [
+                        [
+                            3,
+                            1.5
+                        ],
+                        [
+                            5,
+                            3
+                        ],
+                        [
+                            12,
+                            5
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Export_Output_2.shp_0_500kV",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "Export_Output_2.shp_0",
+            "minzoom": 0,
+            "maxzoom": 24,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "DYDJ",
+                    "500kV"
+                ]
+            ],
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(217, 35, 26, 1)",
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.4
+                        ],
+                        [
+                            4,
+                            1
+                        ]
+                    ]
+                },
+                "line-width": {
+                    "base": 1.5,
+                    "stops": [
+                        [
+                            3,
+                            1.5
+                        ],
+                        [
+                            5,
+                            3
+                        ],
+                        [
+                            12,
+                            4
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Export_Output_2.shp_0_500kV_ZAIJIAN",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "Export_Output_2.shp_0",
+            "minzoom": 0,
+            "maxzoom": 24,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "DYDJ",
+                    "500kV在建"
+                ]
+            ],
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(217, 35, 26,  1)",
+                "line-dasharray": [
+                    5,
+                    3
+                ],
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.4
+                        ],
+                        [
+                            4,
+                            1
+                        ]
+                    ]
+                },
+                "line-width": {
+                    "base": 1.5,
+                    "stops": [
+                        [
+                            3,
+                            1.5
+                        ],
+                        [
+                            5,
+                            3
+                        ],
+                        [
+                            12,
+                            5
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Export_Output_2.shp_0_±500kV",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "Export_Output_2.shp_0",
+            "minzoom": 0,
+            "maxzoom": 24,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "DYDJ",
+                    "±500kV"
+                ]
+            ],
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(0, 160, 56, 1)",
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.4
+                        ],
+                        [
+                            4,
+                            1
+                        ]
+                    ]
+                },
+                "line-width": {
+                    "base": 2,
+                    "stops": [
+                        [
+                            3,
+                            2
+                        ],
+                        [
+                            5,
+                            3
+                        ],
+                        [
+                            12,
+                            5
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Export_Output_2.shp_0_±800kV_ZAIJIAN",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "Export_Output_2.shp_0",
+            "minzoom": 0,
+            "maxzoom": 24,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "DYDJ",
+                    "±800kV"
+                ]
+            ],
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(162,76,142, 1)",
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.4
+                        ],
+                        [
+                            4,
+                            1
+                        ]
+                    ]
+                },
+                "line-width": {
+                    "base": 3,
+                    "stops": [
+                        [
+                            3,
+                            3
+                        ],
+                        [
+                            7,
+                            5
+                        ],
+                        [
+                            12,
+                            6
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Export_Output_2.shp_0_1000kV",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "Export_Output_2.shp_0",
+            "minzoom": 0,
+            "maxzoom": 24,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "DYDJ",
+                    "1000kV"
+                ]
+            ],
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(0,0, 0, 1)",
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.4
+                        ],
+                        [
+                            4,
+                            1
+                        ]
+                    ]
+                },
+                "line-width": {
+                    "base": 5,
+                    "stops": [
+                        [
+                            3,
+                            5
+                        ],
+                        [
+                            7,
+                            5
+                        ],
+                        [
+                            12,
+                            6
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "湖北省500kV输电线路.shp_0_500kV",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "湖北省500kV输电线路.shp_0",
+            "minzoom": 0,
+            "maxzoom": 24,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "Level",
+                    "500kV"
+                ]
+            ],
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(217, 35, 26, 1)",
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.4
+                        ],
+                        [
+                            4,
+                            1
+                        ]
+                    ]
+                },
+                "line-width": {
+                    "base": 1.5,
+                    "stops": [
+                        [
+                            3,
+                            1.5
+                        ],
+                        [
+                            5,
+                            3
+                        ],
+                        [
+                            12,
+                            4
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "湖北省500kV变电站.shp_01",
+            "type": "symbol",
+            "source": "openmaptiles",
+            "source-layer": "湖北省500kV变电站.shp_0",
+            "minzoom": 7,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "Level",
+                    "500kV"
+                ]
+            ],
+            "layout": {
+                "icon-image": "500kVbiandianzhan",
+                "text-anchor": "bottom",
+                "text-field": "{Name}",
+                "text-font": [
+                    "Roboto Medium"
+                ],
+                "text-max-width": 5,
+                "text-offset": [
+                    0,
+                    0
+                ],
+                "text-size": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            7,
+                            14
+                        ],
+                        [
+                            11,
+                            24
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-optional": false,
+                "text-justify": "left"
+            },
+            "paint": {
+                "text-color": "#333",
+                "text-halo-color": "rgba(255,255,255,1)",
+                "text-halo-width": 1.2,
+                "icon-color": "rgba(255, 255, 255, 1)"
+            },
+            "maxzoom": 24
+        },
+        {
+            "id": "fbt_12_wuqu_2020_level_a",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_wuqu_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "a"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(240,240,240,1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_wuqu_2020_level_b",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_wuqu_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "b"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(178, 254, 252, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_wuqu_2020_level_c",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_wuqu_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "c"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 255, 163, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_wuqu_2020_level_d",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_wuqu_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "d"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(153, 255, 153, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_wuqu_2020_level_e",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_wuqu_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "e"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(248, 158, 248, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_wudong_2020_level_a",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_wudong_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "0"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255,255,255,1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_wudong_2020_level_b",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_wudong_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "1"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(178, 254, 252, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_wudong_2020_level_c",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_wudong_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "2"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 255, 163, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_wudong_2020_level_d",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_wudong_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "3"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(248, 158, 248, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_niaofen_2020_level_b",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_niaofen_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风险",
+                    "Ⅰ级"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(178, 254, 252, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_niaofen_2020_level_c",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_niaofen_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风险",
+                    "Ⅱ级"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 255, 163, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_niaofen_2020_level_d",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_niaofen_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风险",
+                    "Ⅲ级"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(248, 158, 248, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_30_level_0_5",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "0~5"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 255, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_30_level_5_10",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "5~10"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(180, 180, 180, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_30_level_10_15",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "10~15"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 255, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_30_level_15_20",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "15~20"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 150, 150, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_30_level_20_30",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "20~30"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(200, 0, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_30_level_30_40",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "30~40"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(200, 100, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_30_level_40_50",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "40~50"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(0, 255, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_30_level_50+",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "50以上"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 0, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_50_level_0_5",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "0~5"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 255, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_50_level_5_10",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "5~10"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(180, 180, 180, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_50_level_10_15",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "10~15"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 255, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_50_level_15_20",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "15~20"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 150, 150, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_50_level_20_30",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "20~30"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(200, 0, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_50_level_30_40",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "30~40"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(200, 100, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_50_level_40_50",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "40~50"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(0, 255, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_50_level_50+",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "50以上"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 0, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_100_level_0_5",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "0~5"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 255, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_100_level_5_10",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "5~10"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(180, 180, 180, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_100_level_10_15",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "10~15"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 255, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_100_level_15_20",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "15~20"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 150, 150, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_100_level_20_30",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "20~30"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(200, 0, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_100_level_30_40",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "30~40"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(200, 100, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_100_level_40_50",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "40~50"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(0, 255, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_bingqu_2020_100_level_50+",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_bingqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "冰厚",
+                    "50以上"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 0, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_100_level_235",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "23.5"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(204, 255, 204, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_100_level_250",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "25"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 155, 200, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_100_level_270",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "27"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 200, 150, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_100_level_290",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "29"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(192, 192, 192, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_100_level_310",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "31"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(0, 255, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_100_level_330",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "33"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(0, 255, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_100_level_350",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "35"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(153, 204, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_100_level_370",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "37"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 255, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_100_level_390",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "39"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 102, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_100_level_410",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "41"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 0, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_100_level_430",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "43"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(102, 0, 204, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_100_level_450",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "45"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(200, 0, 100, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_100_level_500",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "50"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 0, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_100_level_500+",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_100.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    ">50"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(0, 0, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_50_level_235",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "23.5"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(204, 255, 204, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_50_level_250",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "25"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 155, 200, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_50_level_270",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "27"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 200, 150, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_50_level_290",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "29"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(192, 192, 192, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_50_level_310",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "31"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(0, 255, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_50_level_330",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "33"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(0, 255, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_50_level_350",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "35"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(153, 204, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_50_level_370",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "37"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 255, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_50_level_390",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "39"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 102, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_50_level_410",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "41"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 0, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_50_level_430",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "43"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(102, 0, 204, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_50_level_450",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "45"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(200, 0, 100, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_50_level_500",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "50"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 0, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_50_level_500+",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_50.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    ">50"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(0, 0, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_30_level_235",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "23.5"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(204, 255, 204, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_30_level_250",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "25"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 155, 200, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_30_level_270",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "27"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 200, 150, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_30_level_290",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "29"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(192, 192, 192, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_30_level_310",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "31"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(0, 255, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_30_level_330",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "33"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(0, 255, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_30_level_350",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "35"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(153, 204, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_30_level_370",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "37"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 255, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_30_level_390",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "39"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 102, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_30_level_410",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "41"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 0, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_30_level_430",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "43"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(102, 0, 204, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_30_level_450",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "45"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(200, 0, 100, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_30_level_500",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    "50"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 0, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_fengqu_2020_30_level_500+",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_fengqu_2020_30.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "风速",
+                    ">50"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(0, 0, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_dishan_2020_level_A",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_dishan_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "A"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(204, 204, 204, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_dishan_2020_level_B1",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_dishan_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "B1"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(60, 130, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_dishan_2020_level_B2",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_dishan_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "B2"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(0, 255, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_dishan_2020_level_C1",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_dishan_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "C1"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 255, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_dishan_2020_level_C2",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_dishan_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "C2"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 170, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_dishan_2020_level_D1",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_dishan_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "D1"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(255, 0, 255, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_dishan_2020_level_D2",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_dishan_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "D2"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(170, 0, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_dishan_2020_level_E",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_dishan_2020.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "E"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(100, 0, 0, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_leihai_2020_220_fanji_level_I",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_leihai_2020_220_fanji.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "1"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(40, 146, 199, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_leihai_2020_220_fanji_level_II",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_leihai_2020_220_fanji.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "2"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(140, 184, 164, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_leihai_2020_220_fanji_level_III",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_leihai_2020_220_fanji.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "3"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(215, 227, 125, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_leihai_2020_220_fanji_level_IV",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_leihai_2020_220_fanji.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "4"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(252, 207, 81, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_leihai_2020_220_raoji_level_I",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_leihai_2020_220_raoji.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "1"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(215, 227, 125, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_leihai_2020_220_raoji_level_II",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_leihai_2020_220_raoji.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "2"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(252, 207, 81, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_leihai_2020_220_raoji_level_III",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_leihai_2020_220_raoji.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "3"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(247, 122, 45, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_leihai_2020_220_raoji_level_IV",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_leihai_2020_220_raoji.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "4"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(232, 21, 21, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_leihai_2020_500_fanji_level_I",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_leihai_2020_500_fanji.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "1"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(40, 146, 199, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_leihai_2020_500_fanji_level_II",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_leihai_2020_500_fanji.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "2"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(140, 184, 164, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_leihai_2020_500_fanji_level_III",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_leihai_2020_500_fanji.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "3"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(215, 227, 125, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_leihai_2020_500_fanji_level_IV",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_leihai_2020_500_fanji.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "4"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(252, 207, 81, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_leihai_2020_500_raoji_level_I",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_leihai_2020_500_raoji.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "1"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(215, 227, 125, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_leihai_2020_500_raoji_level_II",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_leihai_2020_500_raoji.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "2"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(252, 207, 81, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_leihai_2020_500_raoji_level_III",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_leihai_2020_500_raoji.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "3"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(247, 122, 45, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "fbt_12_leihai_2020_500_raoji_level_IV",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "fbt_12_leihai_2020_500_raoji.shp_0",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "level",
+                    "4"
+                ]
+            ],
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(232, 21, 21, 1)",
+                "fill-opacity": 0.8
+            }
+        },
+        {
+            "id": "wqt_12_leihai_2020_220_raojidian",
+            "type": "symbol",
+            "source": "openmaptiles",
+            "source-layer": "wqt_12_leihai_2020_220_raojidian.shp_0",
+            "minzoom": 7,
+            "layout": {
+                "icon-image": "bakery",
+                "text-anchor": "bottom",
+                "text-field": "{雷击类型}",
+                "text-font": [
+                    "Roboto Medium"
+                ],
+                "text-max-width": 5,
+                "text-offset": [
+                    0,
+                    0
+                ],
+                "text-size": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            7,
+                            14
+                        ],
+                        [
+                            11,
+                            24
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-optional": false,
+                "text-justify": "left"
+            },
+            "paint": {
+                "text-color": "#333",
+                "text-halo-color": "rgba(255,255,255,1)",
+                "text-halo-width": 1.2,
+                "icon-color": "rgba(255, 255, 255, 1)"
+            },
+            "maxzoom": 24
+        },
+        {
+            "id": "wqt_12_leihai_2020_500_raojidian",
+            "type": "symbol",
+            "source": "openmaptiles",
+            "source-layer": "wqt_12_leihai_2020_500_raojidian.shp_0",
+            "minzoom": 7,
+            "layout": {
+                "icon-image": "bakery",
+                "text-anchor": "bottom",
+                "text-field": "{雷击类型}",
+                "text-font": [
+                    "Roboto Medium"
+                ],
+                "text-max-width": 5,
+                "text-offset": [
+                    0,
+                    0
+                ],
+                "text-size": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            7,
+                            14
+                        ],
+                        [
+                            11,
+                            24
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-optional": false,
+                "text-justify": "left"
+            },
+            "paint": {
+                "text-color": "#333",
+                "text-halo-color": "rgba(255,255,255,1)",
+                "text-halo-width": 1.2,
+                "icon-color": "rgba(255, 255, 255, 1)"
+            },
+            "maxzoom": 24
+        },
+        {
+            "id": "wqt_12_leihai_2020_220_fanjidian",
+            "type": "symbol",
+            "source": "openmaptiles",
+            "source-layer": "wqt_12_leihai_2020_220_fanjidian.shp_0",
+            "minzoom": 7,
+            "layout": {
+                "icon-image": "bakery",
+                "text-anchor": "bottom",
+                "text-field": "{雷击类型}",
+                "text-font": [
+                    "Roboto Medium"
+                ],
+                "text-max-width": 5,
+                "text-offset": [
+                    0,
+                    0
+                ],
+                "text-size": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            7,
+                            14
+                        ],
+                        [
+                            11,
+                            24
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-optional": false,
+                "text-justify": "left"
+            },
+            "paint": {
+                "text-color": "#333",
+                "text-halo-color": "rgba(255,255,255,1)",
+                "text-halo-width": 1.2,
+                "icon-color": "rgba(255, 255, 255, 1)"
+            },
+            "maxzoom": 24
+        },
+        {
+            "id": "wqt_12_leihai_2020_500_fanjidian",
+            "type": "symbol",
+            "source": "openmaptiles",
+            "source-layer": "wqt_12_leihai_2020_500_fanjidian.shp_0",
+            "minzoom": 7,
+            "layout": {
+                "icon-image": "bakery",
+                "text-anchor": "bottom",
+                "text-field": "{雷击类型}",
+                "text-font": [
+                    "Roboto Medium"
+                ],
+                "text-max-width": 5,
+                "text-offset": [
+                    0,
+                    0
+                ],
+                "text-size": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            7,
+                            14
+                        ],
+                        [
+                            11,
+                            24
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-optional": false,
+                "text-justify": "left"
+            },
+            "paint": {
+                "text-color": "#333",
+                "text-halo-color": "rgba(255,255,255,1)",
+                "text-halo-width": 1.2,
+                "icon-color": "rgba(255, 255, 255, 1)"
+            },
+            "maxzoom": 24
+        },
+        {
+            "id": "全国所有水系边界",
+            "type": "fill",
+            "source": "openmaptiles",
+            "source-layer": "全国所有水系边界.shp_0",
+            "paint": {
+                "fill-antialias": false,
+                "fill-color": "rgba(53, 154, 204, 1)",
+                "fill-opacity": 1
+            }
+        },
+        {
+            "id": "湖北省一国道",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "湖北省一国道.shp_0",
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#fea",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            5,
+                            0
+                        ],
+                        [
+                            7,
+                            1
+                        ],
+                        [
+                            20,
+                            18
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "湖北省一省道",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "湖北省一省道.shp_0",
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            5,
+                            "hsl(26, 87%, 62%)"
+                        ],
+                        [
+                            6,
+                            "#fc8"
+                        ]
+                    ]
+                },
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            5,
+                            0
+                        ],
+                        [
+                            7,
+                            1
+                        ],
+                        [
+                            20,
+                            18
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "湖北省一高速",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "湖北省一高速.shp_0",
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            5,
+                            "hsl(26, 87%, 62%)"
+                        ],
+                        [
+                            6,
+                            "#fc8"
+                        ]
+                    ]
+                },
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            5,
+                            0
+                        ],
+                        [
+                            7,
+                            1
+                        ],
+                        [
+                            20,
+                            18
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "湖北省一铁路",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "湖北省一铁路.shp_0",
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#bbb",
+                "line-width": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            5,
+                            0.6
+                        ],
+                        [
+                            7,
+                            1
+                        ],
+                        [
+                            20,
+                            18
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "湖北省一县道",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "湖北省一县道.shp_0",
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#D9D1C6",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            5,
+                            0.6
+                        ],
+                        [
+                            7,
+                            1
+                        ],
+                        [
+                            20,
+                            18
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "湖北省一乡道",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "湖北省一乡道.shp_0",
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#D9D1C6",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            5,
+                            0.6
+                        ],
+                        [
+                            7,
+                            1
+                        ],
+                        [
+                            20,
+                            18
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "湖北省一城市一级",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "湖北省一城市一级.shp_0",
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#D9D1C6",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            5,
+                            0.6
+                        ],
+                        [
+                            7,
+                            1
+                        ],
+                        [
+                            20,
+                            18
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "湖北省一城市二级",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "湖北省一城市二级.shp_0",
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#D9D1C6",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            5,
+                            0.6
+                        ],
+                        [
+                            7,
+                            1
+                        ],
+                        [
+                            20,
+                            18
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "湖北省一城市三级",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "湖北省一城市三级.shp_0",
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#D9D1C6",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            5,
+                            0.6
+                        ],
+                        [
+                            7,
+                            1
+                        ],
+                        [
+                            20,
+                            18
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "湖北省一城市四级",
+            "type": "line",
+            "source": "openmaptiles",
+            "source-layer": "湖北省一城市四级.shp_0",
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#D9D1C6",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            5,
+                            0.6
+                        ],
+                        [
+                            7,
+                            1
+                        ],
+                        [
+                            20,
+                            18
+                        ]
+                    ]
+                }
+            }
+        }
+    ],
+    "id": "osm-liberty"
+}
